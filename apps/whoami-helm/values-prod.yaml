@@ -1,6 +1,6 @@
 fullnameOverride: whoami-helm-prod
 
-replicaCount: 3
+replicaCount: 4
 resources:
   requests:
     cpu: 100m
