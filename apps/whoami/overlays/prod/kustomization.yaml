@@ -11,3 +11,12 @@ patches:
       - op: replace
         path: /spec/replicas
         value: 3
+      - op: add
+        path: /spec/template/spec/containers/0/resources
+        value:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 300m
+            memory: 256Mi
